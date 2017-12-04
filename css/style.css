@@ -1,6 +1,6 @@
 body {
-   margin:0px 60px 60px;;
-   font-family: "Roboto";
+   margin:0px 60px 60px;
+   font-family: 'Roboto', sans-serif;
 }
 .wrapper {
       display: flex;
@@ -13,7 +13,7 @@ body {
 .left {float: left;}
 .right {float: right;}
 
-span {color: gray; font-family: }
+span {color: gray; font-weight: 300;}
 
 a:link {color: black; text-decoration: none;}
 a:visited {color: black; text-decoration: none,}
@@ -57,6 +57,7 @@ section {
    position: fixed;
    top: 0;
    left: 0;
+   overflow: hidden;
 
 }
 
@@ -64,28 +65,35 @@ section {
    float: right;
    opacity: 1;
    width: 20px;
-   padding: 55px 60px;
+   padding: 55px 60px 0px 0px;
    transition: all 0.5s ease-in-out;
 
 }
 
 .content-burger-page {
-   margin-top: 50vh;
-   transform: translateY(-50%);
+   padding:55px 60px;
    text-align: center;
+}
+
+.category-content {
+   margin-top: 43vh;
+   transform: translateY(-50%);
 }
 .category  {
    display: inline-block;
    text-align: left;
    padding-right: 80px;
    letter-spacing: 1px;
+   font-weight: 300;
+
 }
 
 .category a {
    color: #848484;
-   font-size: 17px;
+   font-size: 22px;
    line-height: 40px;
-   text-transform: uppercase;
+   text-align: center;
+   transition: all 0.5s ease-in-out;
 }
 
 .category a:hover {
@@ -131,6 +139,7 @@ section {
    .middle-colonne {
       margin: 0 0 0 0px;
    }
+
 }
 
 @media only screen and (max-width:600px) {
@@ -155,6 +164,7 @@ section {
 
    .left {
       width: 200px;
+      text-align: left;
    }
 
    span {
@@ -170,9 +180,8 @@ section {
 
    .category a {
       color: #848484;
-      font-size: 15px;
+      font-size: 22px;
       line-height: 40px;
-      text-transform: uppercase;
       text-align: center;
    }
 }
@@ -189,5 +198,6 @@ section {
       padding-top: 10px;
    }
 
+   .left {text-align: left;}
 }
    /*------------------------------------------------------------------------*/

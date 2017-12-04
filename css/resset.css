@@ -54,21 +54,6 @@ img {
 		transition: all 0.8s ease-in-out;
 }
 
-strong {display: inline; font-family: "Roboto-Bold"};
+strong {display: inline; font-weight: 700; letter-spacing: 0.2px;}
 
 h1 {margin: 0px; padding: 0px;}
-
-@font-face {
-		font-family: "Roboto-Light";
-		src: url('../fonts/Roboto-Light.ttf');
-	}
-
-@font-face {
-   		font-family: "Roboto-Bold";
-   		src: url('../fonts/Roboto-Bold.ttf');
-}
-
-@font-face {
-   		font-family: "Roboto-Thun";
-   		src: url('../fonts/Roboto-Thin.ttf');
-}

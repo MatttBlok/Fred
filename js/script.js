@@ -52,5 +52,5 @@ open.addEventListener('click',function () {
 
 close.addEventListener('click',function () {
    open.style.display='block';
-})
 
+})
