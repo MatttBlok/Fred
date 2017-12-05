@@ -60,6 +60,8 @@ section {
    position: fixed;
    top: 0;
    right: 0;
+   transition: all 0.5s ease-in-out;
+
 
 }
 
@@ -78,9 +80,10 @@ section {
 
 
 .category-content {
-   margin-top: 40vh;
+   margin-top: 42vh;
    transform: translateY(-50%);
 }
+
 .category  {
    display: flex;
    text-align: left;
@@ -92,7 +95,7 @@ section {
 .category a {
    color: #848484;
    font-size: 70px;
-   line-height: 80px;
+   line-height: 82px;
    transition: all 0.5s ease-in-out;
 }
 
@@ -108,6 +111,17 @@ section {
    bottom: 7%;
    color: #BDBDBD;
    font-weight: 300;
+   font-size: 13px;
+}
+
+.contact a{
+   position: absolute;
+   bottom: 7%;
+   right: 6%;
+   color: #BDBDBD;
+   font-weight: 400;
+   font-size: 18px;
+
 }
 
 /*-----------------------------------------------------------------RESPONSIVE*/
@@ -151,7 +165,7 @@ section {
 @media only screen and (max-width:600px) {
 
    body {
-      font-size: 0.9em;
+      font-size: 1em;
    }
    .wrapper {
          display: flex;
@@ -180,7 +194,7 @@ section {
    .category  {
       display: block;
       letter-spacing: 1px;
-      text-align: center;
+      text-align: left;
       padding: 0px;
    }
 
@@ -190,20 +204,23 @@ section {
       line-height: 40px;
       text-align: center;
    }
+
 }
 
 @media only screen and (max-width:500px) {
 
-   .box-menu-center {
+   /*body {
+      margin: 35px;
       transition: all 0.5s ease-in-out;
-      font-size: 17px;
    }
 
-   .social {
-      display: block;
-      padding-top: 10px;
+   #header {
+      padding-top: 0px;
+      transition: all 0.5s ease-in-out;
    }
 
-   .left {text-align: left;}
+   .content-burger-page {
+      padding:55px 35px;
+   }*/
 }
    /*------------------------------------------------------------------------*/

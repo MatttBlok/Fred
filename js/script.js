@@ -12,8 +12,8 @@ $(document).ready(function() {
     $(".animsition").animsition({
         inClass: 'fade-in',
         outClass: 'fade-out',
-        inDuration: 1000,
-        outDuration: 1000,
+        inDuration: 1200,
+        outDuration: 1200,
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
         loading: true,
@@ -31,6 +31,7 @@ $(document).ready(function() {
         overlayParentElement : 'body',
         transition: function(url){ window.location.href = url; }
     });
+
 
 
 });
