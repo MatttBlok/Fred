@@ -32,6 +32,7 @@ $(document).ready(function() {
         transition: function(url){ window.location.href = url; }
     });
 
+
 });
 
 var open = document.querySelector('.menu-logo')
