@@ -30,6 +30,27 @@ a:visited {color: black; text-decoration: none,}
 .menu-logo:hover {
    opacity: 0.5;
 }
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.img_diapo img {
+	transition: all 0.5s ease-in-out;
+	opacity: 1;
+   width: 100%;
+}
+
+img .img_diapo {
+		transition: all 0.8s ease-in-out;
+      opacity: 1;
+}
+
+
+
 /*---------------------------------------------------------------------HEADER*/
 section {
    width: 33.33%;
@@ -48,8 +69,10 @@ section {
 
 .arrow-up {
    float: right;
+   padding-bottom: 60px;
 
 }
+
 /*BURGERPAGE-----------------------------------------------------------------*/
 .burger-page {
    width: 100vw;
@@ -60,8 +83,13 @@ section {
    position: fixed;
    top: 0;
    right: 0;
-   transition: all 0.5s ease-in-out;
+   overflow: hidden;
 
+   transition: height 0.5s ease;
+      -moz-transition: height 0.5s ease;
+      -ms-transition: height 0.5s ease;
+      -o-transition: height 0.5s ease;
+      -webkit-transition: height 0.5s ease;
 
 }
 
@@ -76,12 +104,14 @@ section {
 
 .content-burger-page {
    padding:55px 60px;
+   transition: all 0.5s ease-in-out;
 }
 
 
 .category-content {
    margin-top: 42vh;
    transform: translateY(-50%);
+   transition: all 0.5s ease-in-out;
 }
 
 .category  {
@@ -89,6 +119,7 @@ section {
    text-align: left;
    letter-spacing: 1px;
    font-weight: 300;
+   transition: all 0.5s ease-in-out;
 
 }
 
@@ -121,6 +152,7 @@ section {
    color: #BDBDBD;
    font-weight: 400;
    font-size: 18px;
+   transition: all 0.5s ease-in-out;
 
 }
 
@@ -144,6 +176,7 @@ section {
    }
 }
 
+
 @media only screen and (max-width:980px) {
 
    .wrapper {
@@ -166,7 +199,10 @@ section {
 
    body {
       font-size: 1em;
+      margin:0px 60px 0px;
+      transition: all 0.5s ease-in-out;
    }
+
    .wrapper {
          display: flex;
          flex-direction: column;
@@ -187,8 +223,9 @@ section {
       text-align: left;
    }
 
-   span {
-      padding: 0px;
+   span.namespan {
+      display: none;
+      transition: all 0.5s ease-in-out;
    }
 
    .category  {
@@ -196,31 +233,42 @@ section {
       letter-spacing: 1px;
       text-align: left;
       padding: 0px;
+      transition: font-size .5s ease;
    }
 
    .category a {
       color: #848484;
-      font-size: 22px;
+      font-size: 30px;
       line-height: 40px;
-      text-align: center;
+      transition: font-size .5s ease;
    }
 
 }
 
-@media only screen and (max-width:500px) {
-
-   /*body {
+@media only screen and (max-width:400px) {
+   body{
       margin: 35px;
-      transition: all 0.5s ease-in-out;
-   }
-
-   #header {
-      padding-top: 0px;
       transition: all 0.5s ease-in-out;
    }
 
    .content-burger-page {
       padding:55px 35px;
-   }*/
+      transition: all 0.5s ease-in-out;
+   }
+
+   #header {
+      padding-top: 10px;
+   }
+
+   .arrow-up {
+      padding-bottom: 35px;
+      transition: all 0.5s ease-in-out;
+   }
+
+   p.left {line-height: 18px;}
+
+   .img-responsive:first-child {
+    transition: all 0.8s ease-in-out;
+    margin-top: 0px;
 }
    /*------------------------------------------------------------------------*/

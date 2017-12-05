@@ -42,14 +42,18 @@ var close = document.querySelector('.menu-logo-close')
 
 open.addEventListener('click',function () {
    page.style.display='block';
+         // document.querySelector('body').style.overflow="auto";
 })
 
 close.addEventListener('click',function () {
    page.style.display='';
+   document.querySelector('body').style.overflow="scroll";
 })
 
 open.addEventListener('click',function () {
    open.style.display='';
+   document.querySelector('body').style.overflow="hidden";
+
 })
 
 close.addEventListener('click',function () {

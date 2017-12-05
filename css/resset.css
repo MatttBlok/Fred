@@ -45,13 +45,17 @@ a {
 transition: all 0.5s ease-in-out;
 }
 
-img:hover {
+.img-responsive:hover {
 	transition: all 0.5s ease-in-out;
 	opacity: 0.5;
 }
 
-img {
+.img-responsive {
 		transition: all 0.8s ease-in-out;
+}
+
+.img-diapo {
+	width: 100%;
 }
 
 strong {display: inline; font-weight: 700; letter-spacing: 0.2px;}
