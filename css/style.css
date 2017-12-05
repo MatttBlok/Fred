@@ -48,9 +48,6 @@ img .img_diapo {
 		transition: all 0.8s ease-in-out;
       opacity: 1;
 }
-
-
-
 /*---------------------------------------------------------------------HEADER*/
 section {
    width: 33.33%;
@@ -138,17 +135,18 @@ section {
    padding-right: 0px;
 }
 .copyright-bottom {
-   position: absolute;
+   position: fixed;
    bottom: 7%;
+   right: 0%;
    color: #BDBDBD;
    font-weight: 300;
-   font-size: 13px;
+   font-size: 15px;
+   margin-right: 65px;
 }
 
 .contact a{
    position: absolute;
    bottom: 7%;
-   right: 6%;
    color: #BDBDBD;
    font-weight: 400;
    font-size: 18px;
@@ -252,12 +250,26 @@ section {
    }
 
    .content-burger-page {
-      padding:55px 35px;
+      padding:35px 35px;
+      transition: all 0.5s ease-in-out;
+   }
+
+   .menu-logo-close {
+      padding-right: 35px;
+      padding-top: 35px;
+      transition: all 0.5s ease-in-out;
+   }
+
+   .copyright-bottom {
+      content: attr(title) "C";
+      display: inline;
+      margin-right: 35px;
       transition: all 0.5s ease-in-out;
    }
 
    #header {
-      padding-top: 10px;
+      margin-top: 10px;
+      padding-top: 0px;
    }
 
    .arrow-up {
