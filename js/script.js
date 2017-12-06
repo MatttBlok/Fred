@@ -35,28 +35,30 @@ $(document).ready(function() {
 
 
 });
+jQuery.easing.def = 'easeInQuart';
 
 var open = document.querySelector('.menu-logo')
 var page = document.querySelector('.burger-page')
 var close = document.querySelector('.menu-logo-close')
+var content = document.querySelector('.category-content')
+var copyright = document.querySelector('.copyright-bottom')
 
 open.addEventListener('click',function () {
    page.style.display='block';
-         // document.querySelector('body').style.overflow="auto";
-})
-
-close.addEventListener('click',function () {
-   page.style.display='';
-   document.querySelector('body').style.overflow="scroll";
-})
-
-open.addEventListener('click',function () {
+   $('.burger-page').animate({opacity:'1', duration:1000, easing:'easeInQuart' },);
    open.style.display='';
    document.querySelector('body').style.overflow="hidden";
+   copyright.style.display='';
 
 })
 
 close.addEventListener('click',function () {
-   open.style.display='block';
-
+   document.querySelector('body').style.overflow="scroll";
+   open.style.display='';
+   copyright.style.display='none';
+   $('.burger-page').animate({opacity:'0', display:'none', duration:5000,},);
 })
+
+
+
+

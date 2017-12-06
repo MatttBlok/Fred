@@ -4,10 +4,12 @@
    <meta charset="utf-8"/>
    <link rel="stylesheet" href="css/style.css"/>
    <link rel="stylesheet" href="css/resset.css"/>
+   <link rel="stylesheet" href="css/burgermenu.css"/>
    <link rel="stylesheet" href="css/dist/css/animsition.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <title>Fred Leveugle Portfolio</title>
 </head>
@@ -15,12 +17,22 @@
 <body class="animsition">
 <div id="header">
       <div class="left">
-      <p><a href="index.html"><strong>FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
+      <p><a href="index.html"><strong class="name-fred">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
       </div>
 
    <div class="right">
-      <a href="#"><img class="menu-logo" src="img/icon/menu.png" alt="menu"/></a>
+      <div class="wrapper">
+
+      </div>
+      <a href="#">
+         <div class="menu-logo hamburger transition">
+           <div class="top-bun"></div>
+           <div class="meat"></div>
+           <div class="bottom-bun"></div>
+         </div>
+      </a>
    </div>
+
 </div>
 
    <div class="wrapper">
@@ -32,25 +44,27 @@
 
       <section class="middle-colonne">
          <img src="img/girls/14.jpg" class="img-responsive" alt="img" ><br><span>NAME 01</span>
-         <img src="img/girls/6.jpg" class="img-responsive" alt="img"><span>NAME 01</span>
+         <img src="img/girls/8.jpg" class="img-responsive" alt="img"><span>NAME 01</span>
          <img src="img/girls/4.jpg" class="img-responsive" alt="img"><br><span>NAME 01</span>
       </section>
 
       <section class="right-colonne">
-         <img src="img/girls/8.jpg" class="img-responsive" alt="img"><br><span>NAME 01</span>
+         <img src="img/girls/6.jpg" class="img-responsive" alt="img"><br><span>NAME 01</span>
          <img src="img/girls/7.jpg" class="img-responsive" alt="img"><br><span>NAME 01</span>
          <img src="img/girls/11.jpg" class="img-responsive" alt="img"><br><span>NAME 01</span>
       </section>
    </div>
+
    <a class="js-scrollTo" href="#header"><img class="arrow-up" src="img/icon/arrow_up.svg"  alt="arrow"/></a>
 
-   <div class="burger-page">
+   <div class="burger-page transition">
       <a href="#"><img class="menu-logo-close" src="img/icon/cancel-gray.svg" alt="back"/></a>
 
       <div class="content-burger-page">
          <div class="left">
-            <p><a href="index.html"><strong class="nameblack">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
+            <p><a href="index.html"><strong class="name-fred-white">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
          </div>
+
          <div class="category-content">
             <div class="category">
                <ul>
@@ -62,13 +76,14 @@
                </ul>
             </div>
          </div>
-         <p class="copyright-bottom"> Copyright © 2018</p>
+
+         <p class="copyright-bottom">© 2018</p>
          <p class="contact"><a href="mailto:someone@example.com" target="_top">Contact Me</a></p>
       </div>
+
    </div>
 
 </body>
-
 
    <script src="js/jquery.min.js"></script>
    <script src="css/dist/js/animsition.min.js"></script>
