@@ -35,7 +35,6 @@ $(document).ready(function() {
 
 
 });
-jQuery.easing.def = 'easeInQuart';
 
 var open = document.querySelector('.menu-logo')
 var page = document.querySelector('.burger-page')
@@ -44,21 +43,18 @@ var content = document.querySelector('.category-content')
 var copyright = document.querySelector('.copyright-bottom')
 
 open.addEventListener('click',function () {
-   page.style.display='block';
-   $('.burger-page').animate({opacity:'1', duration:1000, easing:'easeInQuart' },);
    open.style.display='';
    document.querySelector('body').style.overflow="hidden";
    copyright.style.display='';
 
+   $(".burger-page").fadeIn(300);
 })
 
 close.addEventListener('click',function () {
-   document.querySelector('body').style.overflow="scroll";
    open.style.display='';
+   document.querySelector('body').style.overflow="scroll";
    copyright.style.display='none';
-   $('.burger-page').animate({opacity:'0', display:'none', duration:5000,},);
+   $(".burger-page").fadeOut(300);
 })
 
-
-
-
+ Barba.Pjax.start();

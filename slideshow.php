@@ -4,6 +4,7 @@
    <meta charset="utf-8"/>
    <link rel="stylesheet" href="css/style.css"/>
    <link rel="stylesheet" href="css/resset.css"/>
+   <link rel="stylesheet" href="css/burgermenu.css"/>
    <link rel="stylesheet" href="css/dist/css/animsition.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,12 +16,22 @@
 <body class="animsition">
 <div id="header">
       <div class="left">
-      <p><a href="index.html"><strong>FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
+      <p><a href="index.html"><strong class="name-fred">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
    </div>
 
    <div class="right">
-      <a href="#"><img class="menu-logo" src="img/icon/menu.png" alt="menu"/></a>
+      <div class="wrapper">
+
+      </div>
+      <a href="#">
+         <div class="menu-logo hamburger">
+           <div class="top-bun"></div>
+           <div class="meat"></div>
+           <div class="bottom-bun"></div>
+         </div>
+      </a>
    </div>
+
 </div>
 </div>
 <!--  HEADER END -->
@@ -30,7 +41,7 @@
 
    <div class="content-burger-page">
       <div class="left">
-         <p><a href="index.html"><strong class="nameblack">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
+         <p><a href="index.html"><strong class="name-fred">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
       </div>
       <div class="category-content">
          <div class="category">
@@ -43,7 +54,7 @@
             </ul>
          </div>
       </div>
-      <p class="copyright-bottom"> © 2018 All rights reserved</p>
+      <p class="copyright-bottom"> © 2018</p>
       <p class="contact"><a href="mailto:someone@example.com" target="_top">Contact Me</a></p>
    </div>
 </div>

@@ -15,7 +15,7 @@
     }
     .swiper-container {
       width: 100%;
-      height: 100%;
+      height: 80%;
       margin-left: auto;
       margin-right: auto;
       transition: all 0.5s ease-in-out;
