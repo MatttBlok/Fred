@@ -56,5 +56,3 @@ close.addEventListener('click',function () {
    copyright.style.display='none';
    $(".burger-page").fadeOut(300);
 })
-
- Barba.Pjax.start();
