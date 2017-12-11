@@ -10,9 +10,7 @@
 
   <!-- Demo styles -->
   <style>
-    html, body {
-      position: relative;
-    }
+
     .swiper-container {
       width: 100%;
       height: 80%;
