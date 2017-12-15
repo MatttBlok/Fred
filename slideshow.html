@@ -5,6 +5,7 @@
    <link rel="stylesheet" href="css/style.css"/>
    <link rel="stylesheet" href="css/resset.css"/>
    <link rel="stylesheet" href="css/burgermenu.css"/>
+   <link rel="stylesheet" href="css/swiper.css">
    <link rel="stylesheet" href="css/dist/css/animsition.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,24 +18,20 @@
 <div id="header">
       <div class="left">
       <p><a href="index.html"><strong class="name-fred">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
-   </div>
+      </div>
 
    <div class="right">
-      <div class="wrapper">
-
-      </div>
       <a href="#">
-         <div class="menu-logo hamburger">
+         <div class="menu-logo hamburger transition">
            <div class="top-bun"></div>
            <div class="meat"></div>
            <div class="bottom-bun"></div>
          </div>
       </a>
    </div>
+</div>
 
-</div>
-</div>
-<!--  HEADER END -->
+<!-- Swiper -->
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><img class="img-diapo" src="img/diapo/1.jpg" alt="img-diapo"/></div>
@@ -49,35 +46,60 @@
   <div class="swiper-button-prev"></div>
 </div>
 
-<div class="burger-page">
+<div class="burger-page transition">
    <a href="#"><img class="menu-logo-close" src="img/icon/cancel-gray.svg" alt="back"/></a>
 
    <div class="content-burger-page">
       <div class="left">
          <p><a href="index.html"><strong class="name-fred">FRED LEVEUGLE</strong> </a><span class="namespan">PHOTOGRAPHER DIRECTOR</span></p>
       </div>
+
       <div class="category-content">
          <div class="category">
             <ul>
                <li><a href="beauty.html">Beauty</a></li>
-               <li><a href="#">Fashion</a></li>
+               <li><a href="https://www.instagram.com/fred.leveugle/">Fashion</a></li>
                <li><a href="#">Celebrities</a></li>
                <li><a href="#">Lingerie</a></li>
                <li><a href="#">Films</a></li>
             </ul>
          </div>
       </div>
-      <p class="copyright-bottom"> © 2018</p>
-      <p class="contact"><a href="mailto:someone@example.com" target="_top">Contact Me</a></p>
+
+      <p class="copyright-bottom">© 2018</p>
+      <div class="social">
+         <p class="contact"><a href="mailto:someone@example.com" target="_top">Contact Me</a>
+         <a href="instagram.com/fred.leveugle"><img class="icon-insta icon" src="img/icon/instagram.svg" alt="instagram" /></a>
+         <a href="instagram.com/fred.leveugle"><img class="icon-fb icon" src="img/icon/facebook.svg" alt="vimeo" /></a>
+         <a href="instagram.com/fred.leveugle"><img class="icon-vimeo icon" src="img/icon/vimeo.svg" alt="vimeo" /></a>
+         </p>
+      </div>
    </div>
-</div>
-</body>
-
-
-   <script src="js/jquery.min.js"></script>
-   <script src="css/dist/js/animsition.min.js"></script>
-   <script src="js/script.js"></script>
-   <script src="js/scroll.js"></script>
 
 </body>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="css/dist/js/animsition.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>
