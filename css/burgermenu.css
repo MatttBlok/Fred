@@ -35,7 +35,7 @@
 .hamburger:hover div {
   width: 100%;
 }
-.hamburger:hover .top-bun {
+/* .hamburger:hover .top-bun {
   -webkit-animation: burger-hover 1s infinite ease-in-out alternate;
           animation: burger-hover 1s infinite ease-in-out alternate;
 }
@@ -70,4 +70,4 @@
   100% {
     width: 100%;
   }
-}
+} */
