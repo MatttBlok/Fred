@@ -206,13 +206,7 @@ section.full-colonne {
    z-index: -1;
 }
 
-.contact a{
-   color: #151515;
-   font-weight: 400;
-   font-size: 18px;
-   transition: all 0.5s ease-in-out;
 
-}
 
 .social {
    position: absolute;
@@ -222,10 +216,13 @@ section.full-colonne {
 
 .tel {font-size: 17px;}
 
-.contact a:hover{
-   color:#848484;
+.contact-me {
+   font-family: 'Gotham-Bold';
 }
 
+.contact-me:first-child {
+   padding-right: 40px;
+}
 .icon {
    width: 15px;
    transition: all 0.5s ease-in-out;
@@ -286,8 +283,9 @@ section.full-colonne {
 
    .category a {
       color: #848484;
-      font-size: 70px;
-      line-height: 75px;
+      font-size: 55px;
+      line-height: 60px;
+      transition: all 0.5s ease-in-out;
    }
 
 }
@@ -325,6 +323,10 @@ section.full-colonne {
       transition: all 0.5s ease-in-out;
    }
 
+   .copyright-bottom {
+      display: none;
+   }
+
    .category  {
       display: block;
       letter-spacing: 1px;
@@ -335,11 +337,11 @@ section.full-colonne {
 
    .category a {
       color: #848484;
-      font-size: 70px;
-      line-height: 75px;
+      font-size: 40px;
+      line-height: 55px;
    }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
    body{
       margin: 35px;
       transition: all 0.5s ease-in-out;
@@ -350,6 +352,7 @@ section.full-colonne {
       transition: all 0.5s ease-in-out;
    }
 
+
    .menu-logo-close {
       padding-right: 35px;
       padding-top: 35px;
@@ -357,12 +360,12 @@ section.full-colonne {
    }
 
    .copyright-bottom {
-      content: attr(title) "C";
-      display: inline;
-      margin-right: 35px;
-      transition: all 0.5s ease-in-out;
+      display: none
    }
 
+   .contact-me:first-child {
+      display: block;
+   }
    #header {
       margin-top: 10px;
       padding-top: 0px;
