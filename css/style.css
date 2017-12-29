@@ -242,7 +242,27 @@ section.full-colonne {
 }
 
 
+/*--------------------------------------------------------------------404PAGE*/
 
+.content-404 {
+   font-size: 30px;
+   margin-top: 45vh;
+   transform: translateY(-50%);
+   color: #A4A4A4;
+   text-align: center;
+}
+
+.h1-404 {
+   font-size: 70px;
+   font-family: 'Gotham-Light';
+}
+
+.txt-404 {
+   margin-top: 20px;
+   font-size: 28px;
+}
+
+.
 
 /*-----------------------------------------------------------------RESPONSIVE*/
 
@@ -340,6 +360,17 @@ section.full-colonne {
       font-size: 40px;
       line-height: 55px;
    }
+
+   .h1-404 {
+      font-size: 40px;
+      font-family: 'Gotham-Light';
+   }
+
+   .txt-404 {
+      margin-top: 20px;
+      font-size: 28px;
+   }
+}
 
 @media only screen and (max-width:450px) {
    body{
