@@ -12,6 +12,11 @@ body {
 	src: url('../fonts/Gotham-Light.otf');
 }
 
+@font-face {
+	font-family: "Gotham-Medium";
+	src: url('../fonts/Gotham-Medium.ttf');
+}
+
 
 .wrapper {
       display: flex;
@@ -51,6 +56,8 @@ img .img_diapo {
 		transition: all 0.8s ease-in-out;
       opacity: 1;
 }
+
+.img_diapo {max-width: 1300px; max-height: 86px;}
 
 .baseline-img {
    font-family: 'Gotham-Bold';
@@ -110,31 +117,17 @@ section.full-colonne {
 /*-----------------------------------------------------------SLIDESHOW-------*/
 
 .swiper-container {
-  width: 100%;
-  height: 80%;
+  max-width: 1600px;
+  max-height: 866px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.5s ease-in-out;
 }
-.swiper-slide {
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
 
 /*BURGERPAGE-----------------------------------------------------------------*/
 .burger-page {
-      width: 100vw;
+     width: 100vw;
      height: 100vh;
      background-color:#D8D8D8;
      display: none;
@@ -206,8 +199,6 @@ section.full-colonne {
    z-index: -1;
 }
 
-
-
 .social {
    position: absolute;
    bottom: 7%;
@@ -217,7 +208,13 @@ section.full-colonne {
 .tel {font-size: 17px;}
 
 .contact-me {
-   font-family: 'Gotham-Bold';
+   font-family: 'Gotham-Medium';
+   opacity: 1;
+   transition: all 0.5s ease-in-out;
+}
+
+.contact-me:hover {
+   opacity: 0.7;
 }
 
 .contact-me:first-child {
@@ -262,6 +259,7 @@ section.full-colonne {
    font-size: 28px;
 }
 
+.
 
 /*-----------------------------------------------------------------RESPONSIVE*/
 
