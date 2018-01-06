@@ -269,8 +269,9 @@ section.full-colonne {
          display: flex;
          flex-wrap: wrap;
    }
+	
    section {
-      width: 40%;
+      width: 48%;
       display: flex;
       transition: all 0.5s ease-in-out;
    }
