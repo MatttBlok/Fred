@@ -270,7 +270,7 @@ section.full-colonne {
          flex-wrap: wrap;
    }
    section {
-      width: 47.777%;
+      width: 40%;
       display: flex;
       transition: all 0.5s ease-in-out;
    }
