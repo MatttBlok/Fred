@@ -21,11 +21,11 @@ body {
       display: flex;
 }
 
-#header {
+/* #header {
    padding:55px 0px;
    width: 100%;
    display: block;
-}
+} */
 
 .left {float: left;}
 .right {float: right;}
