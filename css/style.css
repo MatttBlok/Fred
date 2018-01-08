@@ -3,7 +3,7 @@ body {
    font-family: "Gotham-Light";
 }
 
-@font-face {
+/* @font-face {
 	font-family: "Gotham-Bold";
 	src: url('../fonts/Gotham-Bold.otf');
 }
@@ -15,8 +15,7 @@ body {
 @font-face {
 	font-family: "Gotham-Medium";
 	src: url('../fonts/Gotham-Medium.ttf');
-}
-
+} */
 
 .wrapper {
       display: flex;
@@ -269,7 +268,7 @@ section.full-colonne {
          display: flex;
          flex-wrap: wrap;
    }
-	
+
    section {
       width: 48%;
       display: flex;
