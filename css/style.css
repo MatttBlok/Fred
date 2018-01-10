@@ -64,7 +64,7 @@ img .img_diapo {
 }
 
 .img-responsive {
-   margin-top: 20px;
+   margin-top: 0px;
 }
 
 .img-responsive:first-child{
@@ -274,6 +274,7 @@ section.full-colonne {
       transition: all 0.5s ease-in-out;
    }
 
+}
 
 @media only screen and (max-width:980px) {
 
@@ -297,6 +298,7 @@ section.full-colonne {
       line-height: 60px;
       transition: all 0.5s ease-in-out;
    }
+
 
 }
 
@@ -355,6 +357,11 @@ section.full-colonne {
       margin-top: 20px;
       font-size: 28px;
    }
+
+   .img-responsive:first-child {
+    transition: all 0.8s ease-in-out;
+    margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width:450px) {
@@ -393,12 +400,9 @@ section.full-colonne {
       transition: all 0.5s ease-in-out;
    }
 
-   p.left {line-height: 18px;}
-
-   .img-responsive:first-child {
-    transition: all 0.8s ease-in-out;
-    margin-top: 20px;
-    }
+   p.left {
+      line-height: 18px;
+   }
 
     .category a {
       color: #848484;
