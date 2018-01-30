@@ -245,8 +245,6 @@ section.full-colonne {
    margin-top: 20px;
    font-size: 28px;
 }
-
-
 /*-----------------------------------------------------------------RESPONSIVE*/
 @media only screen and (max-width:1200px) {
 
@@ -404,8 +402,8 @@ section.full-colonne {
    .arrow-up {padding-bottom: 30px;}
 }
 
-/*-----------------------------------------------------RESPONSIVE landscape  */
-   /* @media screen and (orientation: landscape) {
+-----------------------------------------------------RESPONSIVE landscape/
+   @media screen and (orientation: landscape) {
 
    .category a {
       font-size: 26px;
@@ -414,9 +412,10 @@ section.full-colonne {
 
    }
 
-.category-content {
-   margin-top: 0px;
-   transition: all 0.5s ease-in-out;
+   .category-content {
+      margin-top: 0px;
+      transition: all 0.5s ease-in-out;
 }
-} */
-/*---------------------------------------------------------------------------*/
+
+}
+/*---------------------------------------------------------------------------
